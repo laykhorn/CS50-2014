@@ -1,0 +1,18 @@
+ else if( p[i] == ' ')
+                {
+                int g = i % (m+1);
+                    if (isupper(key[g]))
+                             {
+                             int k = key[g] - 'A';
+                             char x;
+                             x = (p[i] + k -65) % 26 + 65;                           // Encrypt upper case letters and then print it
+                             printf("%c", x);
+                             }                             
+                        else 
+                              {
+                              int k = key[g] - 'a';
+                              char x;
+                              x = (p[i] + k -65) % 26 + 65;                           // Encrypt upper case letters and then print it
+                              printf("%c", x);
+                              }
+                }
